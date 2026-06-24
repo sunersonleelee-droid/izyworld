@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>佛教经典｜佛教经典阅读</title>
+  <meta name="description" content="佛教经典PDF目录" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="classics">
+  <header class="topbar">
+    <a class="brand" href="index.html">佛教经典阅读</a>
+    <nav class="nav">
+      <a href="index.html" data-page="classics">佛教经典</a>
+      <a href="yize.html" data-page="yize">伊泽书院</a>
+      <a href="new-classics.html" data-page="newclassics">新增佛教经典</a>
+    </nav>
+    <div class="search-wrap">
+      <input id="searchInput" type="search" placeholder="搜索全部目录…" />
+    </div>
+  </header>
+
+  <section class="banner">
+    <div class="banner-inner">
+      <p class="eyebrow">Buddhist Texts · Study Resources</p>
+      <h1 id="bannerTitle">佛教经典</h1>
+      <p id="bannerText" class="hidden"></p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="searchResults" class="section hidden">
+      <div class="section-title-row">
+        <div>
+          <h2>搜索结果</h2>
+          <p class="section-description">搜索范围包括本站全部目录。</p>
+        </div>
+        <button class="link-button" id="clearSearchBtn">清除搜索</button>
+      </div>
+      <div id="searchResultList" class="search-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title-row">
+        <div>
+          <h2 id="pageTitle">佛教经典</h2>
+          <p id="pageDescription" class="section-description hidden"></p>
+        </div>
+        <button id="moreBtn" class="primary-button">更多</button>
+      </div>
+      <div id="mainList" class="list-panel"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>本站为佛教经典与学习资料静态索引。请确认所发布PDF与学习资料拥有合法使用权。</p>
+  </footer>
+
+  <div id="modal" class="modal hidden" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <h3 id="modalTitle">全部目录</h3>
+        <button class="icon-button" id="modalClose" aria-label="关闭">×</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
